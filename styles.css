@@ -1,0 +1,296 @@
+/* Reset & base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f5f8fa;
+  color: #2c3e50;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Login Page */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #0077cc;
+}
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.login-container button:hover {
+  background-color: #005fa3;
+}
+
+/* Profile container */
+.profile-container {
+  text-align: center;
+  padding: 30px;
+}
+.profile-container h1 {
+  margin-bottom: 10px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0077cc;
+  margin-top: 12px;
+}
+
+/* Section blocks */
+.section {
+  padding: 30px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.section h2 {
+  margin-bottom: 15px;
+  color: #0077cc;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #005fa3;
+}
+
+#prescription-output {
+  margin-top: 15px;
+  font-style: italic;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px dashed #0077cc;
+}
+
+/* Patient Cards */
+.patient-card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #0077cc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+/* Dropdown styling */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-btn {
+  cursor: pointer;
+  padding: 8px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 8px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 8px;
+}
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #0077cc;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+
+}
+.profile-pic-small {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 50%;
+}
+/* Landing page layout */
+.medify-header {
+  text-align: center;
+  background-color: #0077cc;
+  padding: 40px 20px;
+  color: white;
+}
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.medify-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+}
+.intro-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px;
+}
+#username{
+font-family: 'Courier New', Courier, monospace;
+}
+#password{
+font-family: 'Courier New', Courier, monospace;
+}
+.login-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #1085eb;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.login-card h3 {
+  margin-bottom: 20px;
+  color: #f9fbfd;
+}
+.medify-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eaf1f8;
+  color: #333;
+  margin-top: 40px;
+}
+/* Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.sidebar li i {
+  margin-right: 10px;
+}
+.sidebar li:hover {
+  background-color: #005fa3;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #f8f9fa;
+}
+.dashboard-header h1 {
+  margin-bottom: 20px;
+}
+.summary-widgets {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.widget-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.widget-card h3 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+.patient-list {
+  display: grid;
+  gap: 15px;
+}

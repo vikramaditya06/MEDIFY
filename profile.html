@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medify Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Medify</h2>
+      <ul>
+        <li><i data-lucide="users"></i> Patients</li>
+        <li onclick="location.href='#Prescription'"><i data-lucide="pill"></i> Prescription Generator</li>
+        <li onclick="location.href='doctor.html'"><i data-lucide="calendar-days"></i> Appointments</li>
+        <li onclick="location.href='doctor.html'"><i data-lucide="user"></i> Profile</li>
+        <li onclick="logout()"><i data-lucide="log-out"></i> Logout</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Welcome, <span id="doctor-name"></span></h1>
+      </header>
+
+      <section class="summary-widgets">
+        <div class="widget-card">
+          <h3>Total Patients</h3>
+          <p id="total-patients">--</p>
+        </div>
+        <div class="widget-card">
+          <h3>Appointments Today</h3>
+          <p>3</p>
+        </div>
+        <div class="widget-card">
+          <h3>Pending Prescriptions</h3>
+          <p>2</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Assigned Patients</h2>
+        <div id="patient-container" class="patient-list"></div>
+      </section>
+      <div id="Prescription",class="section">
+    <h2>Prescription Generator</h2>
+    <textarea id="symptoms-input" placeholder="Enter symptoms or diagnosis..."></textarea><br>
+    <button onclick="generatePrescription()">Generate Prescription</button>
+    <div id="prescription-output"></div>
+  </div>
+    </main>
+  </div>
+  
+
+
+  <script src="client.js"></script>
+  <script>
+    lucide.createIcons();
+    const doctor = localStorage.getItem("doctor") || "Doctor";
+    document.getElementById("doctor-name").innerText = doctor;
+
+    function logout() {
+      localStorage.removeItem("doctor");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
